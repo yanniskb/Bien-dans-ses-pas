@@ -2,64 +2,155 @@ html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bien dans ses pas - Boutique de chaussures</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        .produit {
-            background-color: white;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .produit h3 {
-            margin-top: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bien dans ses pas - Boutique de chaussures</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .produits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .produit {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px;
+      width: 250px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .produit img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .produit h3 {
+      margin: 10px 0 5px 0;
+    }
+    .produit p {
+      margin: 5px 0;
+    }
+    footer {
+      background-color: #333;
+    color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Bien dans ses pas</h1>
-        <p>Votre boutique de chaussures en ligne</p>
-    </header>
+  <header>
+    <h1>Bien dans ses pas</h1>
+    <p>Votre boutique de chaussures en ligne</p>
+  </header>
 
-    <main>
-        <h2>Nos produits</h2>
-   <div class="produit">
-            <h3>Baskets Homme</h3>
-            <p>Confortables et stylées pour le quotidien.</p>
-            <strong>Prix : 35 €</strong>
-        </div>
+  <main>
+    <h2>Nos Produits</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="https://example.com/air-force-one.jpg" alt="Air Force One">
+        <h3>Air Force One</h3>
+        <p>Prix : 25 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/campus-adidas.jpg" alt="Campus Adidas">
+        <h3>Campus Adidas</h3>
+        <p>Prix : 30 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/nike-tn.jpg" alt="Nike TN">
+        <h3>Nike TN</h3>
+        <p>Prix : 30 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/nike-dunk.jpg" alt="Nike Dunk">
+        <h3>Nike Dunk</h3>
+        <p>Prix : 25 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/cactus-jack-nike.jpg" alt="Cactus Jack Nike">
+        <h3>Cactus Jack Nike</h3>
+        <p>Prix : 25 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/new-balance.jpg" alt="New Balance">
+        <h3>New Balance</h3>
+        <p>Prix : 30 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/puma-suede.jpg" alt="Puma Suède">
+        <h3>Puma Suède</h3>
+        <p>Prix : 25 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/timberland.jpg" alt="Timberland">
+        <h3>Timberland</h3>
+        <p>Prix : 35 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/air-jordan.jpg" alt="Air Jordan">
+        <h3>Air Jordan</h3>
+        <p>Prix : 30 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/samba.jpg" alt="Samba">
+        <h3>Samba</h3>
+        <p>Prix : 25 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/alexander-mcqueen.jpg" alt="Alexander McQueen">
+        <h3>Alexander McQueen</h3>
+        <p>Prix : 40 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/jordan-4.jpg" alt="Jordan 4">
+        <h3>Jordan 4</h3>
+        <p>Prix : 30 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/jordan-3.jpg" alt="Jordan 3">
+        <h3>Jordan 3</h3>
+        <p>Prix : 30 €</p>
+      </div>
+      <div class="produit">
+    <img src="https://example.com/jordan-1.jpg" alt="Jordan 1">
+        <h3>Jordan 1</h3>
+        <p>Prix : 25 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/jordan-5.jpg" alt="Jordan 5">
+        <h3>Jordan 5</h3>
+        <p>Prix : 30 €</p>
+      </div>
+      <div class="produit">
+        <img src="https://example.com/jordan-11.jpg" alt="Jordan 11">
+        <h3>Jordan 11</h3>
+        <p>Prix : 30 €</p>
+      </div>
+    </div>
+  </main>
 
-        <div class="produit">
-            <h3>Sandales Femme</h3>
-            <p>Légères et parfaites pour l'été.</p>
-            <strong>Prix : 28 €</strong>
-        </div>
-
-        <div class="produit">
-            <h3>Chaussures Enfant</h3>
-            <p>Idéales pour l'école et les jeux.</p>
-            <strong>Prix : 22 €</strong>
-        </div>
-    </main>
+  <footer>
+    <p>Contactez-nous au : 09 74 54 07 12</p>
+  </footer>
 
 </body>
 </html>
