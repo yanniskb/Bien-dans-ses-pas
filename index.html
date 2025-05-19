@@ -1,155 +1,253 @@
-html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bien dans ses pas - Boutique de chaussures</title>
+  <title>Boutique - Bien dans ses pas</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background: #f4f4f4;
       margin: 0;
-      padding: 0;
     }
     header {
-      background-color: #333;
+      background: #222;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    main {
-      padding: 20px;
-    }
-    .produits {
+    .grid {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
-    .produit {
-      background-color: white;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 10px;
-      width: 250px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .card {
+      background: #fff;
+      width: 230px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
       text-align: center;
     }
-    .produit img {
+    .card img {
       width: 100%;
       height: auto;
-      border-radius: 5px;
     }
-    .produit h3 {
-      margin: 10px 0 5px 0;
+    .card h3 {
+      margin: 10px 0 5px;
     }
-    .produit p {
-    margin: 5px 0;
+    .card p {
+      font-weight: bold;
+      color: #444;
+    }
+    .card .buttons {
+      margin: 10px 0 15px;
+    }
+    .card button {
+      background-color: #222;
+      color: white;
+      padding: 8px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .card button:hover {
+      background-color: #555;
     }
     footer {
-      background-color: #333;
-      color: white;
+      background: #222;
+      color: #ccc;
       text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Bien dans ses pas</h1>
-    <p>Votre boutique de chaussures en ligne</p>
+    <p>Nos modèles disponibles</p>
   </header>
 
-  <main>
-    <h2>Nos Produits</h2>
-    <div class="produits">
-      <div class="produit">
-        <img src="https://example.com/air-force-one.jpg" alt="Air Force One">
-        <h3>Air Force One</h3>
-        <p>Prix : 25</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/campus-adidas.jpg" alt="Campus Adidas">
-        <h3>Campus Adidas</h3>
-        <p>Prix :30</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/nike-tn.jpg" alt="Nike TN">
-        <h3>Nike TN</h3>
-        <p>Prix : 30</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/nike-dunk.jpg" alt="Nike Dunk">
-        <h3>Nike Dunk</h3>
-        <p>Prix :25</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/cactus-jack-nike.jpg" alt="Cactus Jack Nike">
-        <h3>Cactus Jack Nike</h3>
-        <p>Prix : $25</p>
-      </div>
-      <div class="produit">
-      <img src="https://example.com/new-balance.jpg" alt="New Balance">
-        <h3>New Balance</h3>
-        <p>Prix :30</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/puma-suede.jpg" alt="Puma Suède">
-        <h3>Puma Suède</h3>
-        <p>Prix : 25</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/timberland.jpg" alt="Timberland">
-        <h3>Timberland</h3>
-        <p>Prix :35</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/air-jordan.jpg" alt="Air Jordan">
-        <h3>Air Jordan</h3>
-        <p>Prix : 30</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/samba.jpg" alt="Samba">
-        <h3>Samba</h3>
-        <p>Prix :25</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/alexander-mcqueen.jpg" alt="Alexander McQueen">
-        <h3>Alexander McQueen</h3>
-        <p>Prix : 40</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/jordan-4.jpg" alt="Jordan 4">
-        <h3>Jordan 4</h3>
-        <p>Prix :30</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/jordan-3.jpg" alt="Jordan 3">
-        <h3>Jordan 3</h3>
-        <p>Prix : 30</p>
-      </div><div class="produit">
-        <img src="https://example.com/jordan-1.jpg" alt="Jordan 1">
-        <h3>Jordan 1</h3>
-        <p>Prix :25</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/jordan-5.jpg" alt="Jordan 5">
-        <h3>Jordan 5</h3>
-        <p>Prix : 30</p>
-      </div>
-      <div class="produit">
-        <img src="https://example.com/jordan-11.jpg" alt="Jordan 11">
-        <h3>Jordan 11</h3>
-        <p>Prix :30</p>
+  <div class="grid">
+    <!-- Exemple de carte produit -->
+    <div class="card">
+      <img src="images/airforce1.jpg" alt="Air Force ONE">
+      <h3>Air Force ONE</h3>
+      <p>25 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
       </div>
     </div>
-  </main>
+
+    <div class="card">
+      <img src="images/campus_adidas.jpg" alt="Campus Adidas">
+      <h3>Campus Adidas</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/nike_tn.jpg" alt="Nike TN">
+      <h3>Nike TN</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/nike_dunk.jpg" alt="Nike Dunk">
+      <h3>Nike Dunk</h3>
+      <p>25 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/cactus_jack.jpg" alt="Cactus Jack Nike">
+      <h3>Cactus Jack Nike</h3>
+      <p>25 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/new_balance.jpg" alt="New Balance">
+      <h3>New Balance</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/puma_suede.jpg" alt="Puma Suède">
+      <h3>Puma Suède</h3>
+      <p>25 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/timberland.jpg" alt="Timberland">
+      <h3>Timberland</h3>
+      <p>35 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/air_jordan.jpg" alt="Air Jordan">
+      <h3>Air Jordan</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/samba.jpg" alt="Samba">
+      <h3>Samba</h3>
+      <p>25 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/air_jordan2.jpg" alt="Air Jordan">
+      <h3>Air Jordan</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/alexander_mcqueen.jpg" alt="Alexander McQueen">
+      <h3>Alexander McQueen</h3>
+      <p>40 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/jordan4.jpg" alt="Jordan 4">
+      <h3>Jordan 4</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/jordan3.jpg" alt="Jordan 3">
+      <h3>Jordan 3</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/jordan1.jpg" alt="Jordan 1">
+      <h3>Jordan 1</h3>
+      <p>25 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/jordan5.jpg" alt="Jordan 5">
+      <h3>Jordan 5</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/jordan11.jpg" alt="Jordan 11">
+      <h3>Jordan 11</h3>
+      <p>30 $</p>
+      <div class="buttons">
+        <button>Commander</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    <p>Contactez-nous au : 09 74 54 07 12</p>
+    <p>Pour toute commande, contactez-nous au <strong>0974540712</strong></p>
+    <p>&copy; 2025 Bien dans ses pas</p>
   </footer>
-
 </body>
 </html>
