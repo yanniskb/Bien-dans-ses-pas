@@ -1,26 +1,63 @@
-markdown
-Bien dans ses pas
-*Bien dans ses pas* est un site web de vente de chaussures qui propose une large gamme de modèles pour hommes, femmes et enfants.
-Notre objectif est d'offrir des produits de qualité, stylés et confortables à un prix accessible.
-Fonctionnalités
-prévues
-- Catalogue de chaussures avec filtres par taille, couleur et prix
-- Système de panier d'achat
-- Paiement en ligne sécurisé
-- Interface responsive (adaptée aux téléphones et tablettes)
-- Espace client : commande, suivi, historique
-Technologies
-envisagées
-- HTML / CSS /
-JavaScript
-- Framework front-end (ex : React ou Vue.js)
-- Backend : Node.js, PHP ou autre selon l'évolution
-- Base de données :
-MySQL / MongoDB
-- Intégration avec des services de paiement
-(airtel money,orange money etc.)
-8 Statut
-Projet en cours de développement (phase initiale).
-• Contact
-Pour toute collaboration ou question, contactez-nous à :
-*bien@danssespas.com* ou 0974540712
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bien dans ses pas - Boutique de chaussures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .produit {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .produit h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bien dans ses pas</h1>
+        <p>Votre boutique de chaussures en ligne</p>
+    </header>
+
+    <main>
+        <h2>Nos produits</h2><div class="produit">
+            <h3>Baskets Homme</h3>
+            <p>Confortables et stylées pour le quotidien.</p>
+            <strong>Prix : 35 €</strong>
+        </div>
+
+        <div class="produit">
+            <h3>Sandales Femme</h3>
+            <p>Légères et parfaites pour l'été.</p>
+            <strong>Prix : 28 €</strong>
+        </div>
+
+        <div class="produit">
+            <h3>Chaussures Enfant</h3>
+            <p>Idéales pour l'école et les jeux.</p>
+            <strong>Prix : 22 €</strong>
+        </div>
+    </main>
+
+</body>
+</html>
