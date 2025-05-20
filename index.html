@@ -1,253 +1,191 @@
+html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Boutique - Bien dans ses pas</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .card {
-      background: #fff;
-      width: 230px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      height: auto;
-    }
-    .card h3 {
-      margin: 10px 0 5px;
-    }
-    .card p {
-      font-weight: bold;
-      color: #444;
-    }
-    .card .buttons {
-      margin: 10px 0 15px;
-    }
-    .card button {
-      background-color: #222;
-      color: white;
-      padding: 8px 15px;
-      margin: 5px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-    .card button:hover {
-      background-color: #555;
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bien dans ses pas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Bien dans ses pas</h1>
-    <p>Nos modèles disponibles</p>
+    <nav>
+      <h1>Bien dans ses pas</h1>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="grid">
-    <!-- Exemple de carte produit -->
-    <div class="card">
-      <img src="images/airforce1.jpg" alt="Air Force ONE">
-      <h3>Air Force ONE</h3>
-      <p>25 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/campus_adidas.jpg" alt="Campus Adidas">
-      <h3>Campus Adidas</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/nike_tn.jpg" alt="Nike TN">
-      <h3>Nike TN</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/nike_dunk.jpg" alt="Nike Dunk">
-      <h3>Nike Dunk</h3>
-      <p>25 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/cactus_jack.jpg" alt="Cactus Jack Nike">
-      <h3>Cactus Jack Nike</h3>
-      <p>25 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/new_balance.jpg" alt="New Balance">
-      <h3>New Balance</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/puma_suede.jpg" alt="Puma Suède">
-      <h3>Puma Suède</h3>
-      <p>25 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/timberland.jpg" alt="Timberland">
-      <h3>Timberland</h3>
-      <p>35 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/air_jordan.jpg" alt="Air Jordan">
-      <h3>Air Jordan</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/samba.jpg" alt="Samba">
-      <h3>Samba</h3>
-      <p>25 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/air_jordan2.jpg" alt="Air Jordan">
-      <h3>Air Jordan</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/alexander_mcqueen.jpg" alt="Alexander McQueen">
-      <h3>Alexander McQueen</h3>
-      <p>40 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/jordan4.jpg" alt="Jordan 4">
-      <h3>Jordan 4</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/jordan3.jpg" alt="Jordan 3">
-      <h3>Jordan 3</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/jordan1.jpg" alt="Jordan 1">
-      <h3>Jordan 1</h3>
-      <p>25 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/jordan5.jpg" alt="Jordan 5">
-      <h3>Jordan 5</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/jordan11.jpg" alt="Jordan 11">
-      <h3>Jordan 11</h3>
-      <p>30 $</p>
-      <div class="buttons">
-        <button>Commander</button>
-        <button>Ajouter au panier</button>
-      </div>
-    </div>
-  </div>
+  <main>
+    <section class="hero">
+      <h2>Bienvenue chez Bien dans ses pas</h2>
+      <p>Découvrez notre collection exclusive de chaussures de marque à prix abordables.</p>
+      <a href="boutique.html" class="btn">Voir la boutique</a>
+    </section>
+  </main>
 
   <footer>
-    <p>Pour toute commande, contactez-nous au <strong>0974540712</strong></p>
-    <p>&copy; 2025 Bien dans ses pas</p>
+    <p>&copy; 2025 Bien dans ses pas. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
+```
+
+
+---
+
+🛍️ Page Boutique (`boutique.html`)
+
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boutique - Bien dans ses pas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Bien dans ses pas</h1>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <!-- Exemple de produit -->
+      <div class="product-card">
+        <img src="images/air-force-one.jpg" alt="Air Force ONE" />
+        <h3>Air Force ONE</h3>
+        <p>25$</p>
+        <button class="add-to-cart">Ajouter au panier</button>
+      </div>
+      <!-- Répétez pour chaque produit -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bien dans ses pas. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
+```
+
+
+---
+
+🎨 Fichier CSS (`style.css`)
+
+
+```css
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header nav {
+background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  padding: 4em 2em;
+  background-color: #eaeaea;
+}
+
+.hero h2 {
+  margin-bottom: 0.5em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.add-to-cart {
+  margin-top: 1em;
+  padding: 0.5em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #fff;
+  margin-top: 2em;
+}
+const buttons = document.querySelectorAll('.add-to-cart');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      alert('Produit ajouté au panier !');
+    });
+  });
+});
+```
